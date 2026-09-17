@@ -1,0 +1,4 @@
+@RestController : Tells Spring that this class handles htttp request and return data as the response.
+
+@GetMapping("/products") : Tells Spring when someone send a request to "/products" execute this method.
+
