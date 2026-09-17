@@ -1,0 +1,7 @@
+Question :
+What does @SpringBootApplication annotation does?
+
+Answer:
+@SpringBootApplication tells the SpringBoot how to configure the application. It combines annotations @Configuration, @EnableAutoConfiguration and @ComponentScan. @Configuration annotation tells this class provides all the Spring Bean definations, @EnableAutoConfiguration tells to see all configurations in the classpath, environment and configure the components automatically, @ComponentScan scans all the relevant packages for components such as @controller, @service, @repository and @component.
+
+
