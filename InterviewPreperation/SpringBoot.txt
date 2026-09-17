@@ -4,4 +4,8 @@ What does @SpringBootApplication annotation does?
 Answer:
 @SpringBootApplication tells the SpringBoot how to configure the application. It combines annotations @Configuration, @EnableAutoConfiguration and @ComponentScan. @Configuration annotation tells this class provides all the Spring Bean definations, @EnableAutoConfiguration tells to see all configurations in the classpath, environment and configure the components automatically, @ComponentScan scans all the relevant packages for components such as @controller, @service, @repository and @component.
 
+Question:
+Why is constructor injection preferred over creating ProductService directly with new ProductService() inside OrderService?
 
+Answer:
+Constructor Injection is preferred because it makes dependencies explicit, supports loose coupling and easy Unit Testing. It also allows alll the required dependencies to be provided at the time of object creation. Spring manages and injects the dependeancy instead of the class creating it with new.
