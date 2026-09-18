@@ -3,3 +3,9 @@ REST Concepts:
 1. Path Variables
 2. @PostMapping
 3. @RequestBody - Tells the spring to take the data from the HTTP request body and   convert it into Java Object represented by this parameter.
+
+Status Code:
+Status	Meaning	Example
+200	Success	Product found
+404	Resource not found	Product ID 10 doesn't exist
+405	Method not allowed	DELETE isn't supported on an endpoint
