@@ -9,3 +9,29 @@ Why is constructor injection preferred over creating ProductService directly wit
 
 Answer:
 Constructor Injection is preferred because it makes dependencies explicit, supports loose coupling and easy Unit Testing. It also allows alll the required dependencies to be provided at the time of object creation. Spring manages and injects the dependeancy instead of the class creating it with new.
+
+
+Question:
+Why does our controller return List<Product> instead of returning a JSON string manually, such as: return "[{\"id\":1,\"name\":\"Laptop\"}]";
+
+Answer:
+List<Product> is returned because the application works with Java Objects, not manually constructed JSON strings. Spring Boot uses Jackson to automatically serialize the product objects into JSON when sending HTTP response. This way, it is cleaner, type-safe and easier to maintain than manually building JSON strings.
+
+Qusetion:
+What is the difference between @Controller and @RestController in Spring?
+
+Answer:
+@Controller is used for traditional MVC applications where a controller method may return a view name. @RestController is used for REST APIs, it combines @controller and @ResponseBody, so the method return value is written directly into HTTP response body.Spring Jackson converts the response or list into JSON.
+
+Qusetion:
+Our ProductController currently has:
+
+@GetMapping("/products")
+public List<Product> getProducts() {
+    return productService.getProducts();
+}
+
+What does @GetMapping("/products") tell Spring to do?
+
+Answer:
+@GetMappping("/products")maps a GET HTTP request to the /producturl to getProducts() method. So that whenevr the client send a GET request to /products, spring invokes that method.
