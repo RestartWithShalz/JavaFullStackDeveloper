@@ -35,3 +35,29 @@ What does @GetMapping("/products") tell Spring to do?
 
 Answer:
 @GetMappping("/products")maps a GET HTTP request to the /producturl to getProducts() method. So that whenevr the client send a GET request to /products, spring invokes that method.
+
+
+Question:
+What is the difference between @RequestBody and @PathVariable?
+
+Answer:
+@RequestBody is used to bind the data from HTTP request body usually JSON to a JAVA object. It is commonly used with POST, PUT and PATCH requests.
+
+@PathVariable is used to extract a value from the URL path and bind it to the method parameter. It is commonly used when we need to identify a specific resource.
+
+
+Question:
+Suppose the client sends this request:
+
+GET /products/10
+
+and there is no product with ID 10.
+
+Your current service returns null.
+
+What should a proper REST API return to the client in this situation, and what HTTP status code would you use?
+
+Answer:
+If the request product does not exists, the API should return HTTP 404 Not Found with a meaningful error message such as "Product ID 10 not found."
+
+
