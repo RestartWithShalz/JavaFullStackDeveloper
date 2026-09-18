@@ -1,0 +1,5 @@
+REST Concepts:
+
+1. Path Variables
+2. @PostMapping
+3. @RequestBody - Tells the spring to take the data from the HTTP request body and   convert it into Java Object represented by this parameter.
