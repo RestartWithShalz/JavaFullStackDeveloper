@@ -17,3 +17,8 @@ psql -d cemployee_db
 5. Database Creation
 
 CREATE DATABASE eneterprise_order_db;
+
+Exit the Postgresql : \q
+
+6. List the tables in DB : \dt
+7. Inspect the table : \d <table_name>
