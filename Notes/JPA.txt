@@ -3,8 +3,8 @@ JPA Fullform is Java Persistence API
 JPA means contract/interface/Java specification.
 
 It defines concepts like:
-1. Entity
-2. Primary Key
+1. Entity - Tells JPA this class represents a table in the DB.
+2. Primary Key 
 3. Relationships
 4. Persistence
 5. Queries
@@ -24,3 +24,12 @@ public class Product {
 }
 
 Here, JPA specifications tells spring that Java class represents persistent data and this field represents the primary key.
+
+
+1. @Entity
+
+2. @Id : Tells JPA this field is the primary key of the Product entity.
+    @GeneratedValue : Tells JPA the Id should be generated automatically.
+
+GenerationType.IDENTITY
+Tells JPA for PostgreSql, it allows the database to generate the ID using its Identity/auto-generated column mechanism.
