@@ -14,3 +14,8 @@ we get methods like:
 findAll(), finfById(), save(), deleteById(), existsById()
 
 without implementing all those database operations ourselves.
+
+
+save() : productRepository.save(product);
+
+Spring data JPA decides whether this is an INSERT or UPDATE based on the entity's identity/state.
