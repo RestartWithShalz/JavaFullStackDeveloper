@@ -1,1 +1,12 @@
 PostgreSQL : Database that stores our relational data.
+
+Commands:
+
+1. psql --version
+
+2. brew services list | grep postgresql
+
+3. brew services start postgresql@18
+
+Database Creation:
+ createdb enterprise_order_db
