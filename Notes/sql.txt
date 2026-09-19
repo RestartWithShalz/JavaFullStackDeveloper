@@ -1,0 +1,1 @@
+PostgreSQL : Database that stores our relational data.
