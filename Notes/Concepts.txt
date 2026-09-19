@@ -9,3 +9,8 @@ Status	Meaning	Example
 200	Success	Product found
 404	Resource not found	Product ID 10 doesn't exist
 405	Method not allowed	DELETE isn't supported on an endpoint
+
+
+4. ResponseEntity - To properly handle HTTP status.
+Product Exists - 200
+Product Not found - 404
