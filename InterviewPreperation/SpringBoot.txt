@@ -10,6 +10,12 @@ Why is constructor injection preferred over creating ProductService directly wit
 Answer:
 Constructor Injection is preferred because it makes dependencies explicit, supports loose coupling and easy Unit Testing. It also allows alll the required dependencies to be provided at the time of object creation. Spring manages and injects the dependeancy instead of the class creating it with new.
 
+Question:
+Does save() always inserts?
+
+Answer:
+save() is used for both creating and updating entities. For new enetity it results in an INSERT, while for an existing entity it result in an UPDATE depending on the entity's persistence state and identifier.
+
 
 Question:
 Why does our controller return List<Product> instead of returning a JSON string manually, such as: return "[{\"id\":1,\"name\":\"Laptop\"}]";
