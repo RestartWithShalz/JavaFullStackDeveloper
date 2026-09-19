@@ -1,0 +1,26 @@
+Hibernate ORM = Implementation of JPA
+
+ORM = Object Relational Mapping
+
+It is a bridge between Java World and Database world.
+
+For ex:
+
+  Java World                   Database World
+Product Object        <->      product table
+product.id            <->.      id column
+
+
+
+Hibernate translates persistence operations into SQL, so that we dont have to writ SQL by ourselves such as:
+
+Product product = new Product();
+product.setName("Monitor");
+product.setPrice(199.99);
+
+is equivalent to
+
+INSERT INTO products
+(name, price)
+VALUES
+('Monitor', 199.99)
