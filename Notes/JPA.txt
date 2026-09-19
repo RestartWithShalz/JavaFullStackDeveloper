@@ -1,0 +1,26 @@
+JPA Fullform is Java Persistence API 
+
+JPA means contract/interface/Java specification.
+
+It defines concepts like:
+1. Entity
+2. Primary Key
+3. Relationships
+4. Persistence
+5. Queries
+6. Entity Lifecycle
+7. Mapping Java Objects to Database tables.
+
+Example:
+
+@Entity
+public class Product {
+
+    @Id
+    private long id;
+
+    private String name;
+    private double price;
+}
+
+Here, JPA specifications tells spring that Java class represents persistent data and this field represents the primary key.
