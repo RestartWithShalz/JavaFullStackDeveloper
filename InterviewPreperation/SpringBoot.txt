@@ -61,3 +61,11 @@ Answer:
 If the request product does not exists, the API should return HTTP 404 Not Found with a meaningful error message such as "Product ID 10 not found."
 
 
+Question:
+What is the difference between JPA and Hibernate?
+
+Answer:
+JPA is specification that defines the standard for ORM and persistence in JAVA,
+while Hibernate is the ORM framework that provides an implentation of that specification.
+
+
