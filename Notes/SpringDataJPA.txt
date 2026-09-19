@@ -1,0 +1,16 @@
+Spring Data JPA sits on top of JPA. 
+It makes repository/database access much easier.
+
+
+For eg:
+
+when we write,
+
+public interface ProductRepository extends JPARepository<Product, Long> {
+}
+
+we get methods like: 
+
+findAll(), finfById(), save(), deleteById(), existsById()
+
+without implementing all those database operations ourselves.
