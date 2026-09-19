@@ -1,0 +1,19 @@
+Database URL
+
+spring.datasource.url = jdbc.postgresql://localhost:5432/enterprise_order_db
+
+jdbc:postgresql://localhost:5432/enterprise_order_db
+     │             │        │
+     │             │        └── database
+     │             └── PostgreSQL port
+     └── PostgreSQL JDBC connection
+
+
+spring.jpa.hibernate.ddl-auto= update
+
+ddl-auto means for our development project, Hibernate will update the database schema based on our entities.
+
+
+spring.jpa.show-sql = true
+
+Hibernate will generate/prints the SQL it generates in the console.
