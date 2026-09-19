@@ -10,3 +10,10 @@ Commands:
 
 Database Creation:
  createdb enterprise_order_db
+
+4. "Connect to the PostgreSQL server and specifically use the employee_db database."
+psql -d cemployee_db
+
+5. Database Creation
+
+CREATE DATABASE eneterprise_order_db;
