@@ -2,3 +2,5 @@ Jakarta Bean Validation
 @NotBlank
 @Positive
 @PositiveOrZero
+
+## We need to tell Spring Validate this request body before entering the controller method
